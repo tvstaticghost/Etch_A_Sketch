@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons8-gameboy-48.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Etch A Sketch</h1>
+    <h2>Select your color, board size, and draw!</h2>
+    <div class="etch__wrapper">
+        <div class="etch__controls">
+            <p class="color__selector">Color Selector</p>
+            <input type="radio" name="color" id="black" value="Black" checked>
+            <label for="black" class="checkmark">Black</label>
+            <br>
+            <input type="radio" name="color" id="blue" value="Blue">
+            <label for="blue" class="checkmark">Purple</label>
+            <br>
+            <input type="radio" name="color" id="red" value="Red">
+            <label for="red" class="checkmark">Red</label>
+            <br>
+            <input type="radio" name="color" id="rainbow" value="Rainbow">
+            <label for="rainbow" class="checkmark">Rainbow</label>
+
+            <p class="board__size">Board Size</p>
+            <input type="radio" name="size" id="small" value="Small" checked>
+            <label for="small" class="checkmark">Small</label>
+            <br>
+            <input type="radio" name="size" id="medium" value="Medium">
+            <label for="medium" class="checkmark">Medium</label>
+            <br>
+            <input type="radio" name="size" id="large" value="Large">
+            <label for="large" class="checkmark">Large</label><br>
+
+            <button class="reset__btn" id="reset-btn">RESET</button>
+        </div>
+        <div class="etch__board" id="etch-board">
+    
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
